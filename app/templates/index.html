@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text similarity</title>
+    <style>
+        
+        input[type="text"] {
+            width: 600px; 
+        }
+
+        button[type="submit"] {
+            margin-left: 300px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Text similarity</h1>
+    <form method="post" action="/">
+        <label for="input1">Sentence 1:</label>
+        {% if input1 %} 
+        <input type="text" id="input1" name="input1" placeholder="Enter value for input 1..." value="{{ input1 }}" required>
+        {% else %} 
+        <input type="text" id="input1" name="input1" placeholder="Enter value for input 1..." required>
+        {% endif %}
+        <br>
+        <label for="input2">Sentence 2:</label>
+        {% if input2 %} 
+        <input type="text" id="input2" name="input2" placeholder="Enter value for input 2..." value="{{ input2 }}"required>
+        {% else %} 
+        <input type="text" id="input2" name="input2" placeholder="Enter value for input 2..." required>
+        {% endif %}
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Calculate similarity between 2 sentences</h3>
+
+    {% if similarity %} 
+    <p>Cosine similarity value : {{ similarity }}</p>
+    {% endif %}
+
+
+</body>
+</html>
