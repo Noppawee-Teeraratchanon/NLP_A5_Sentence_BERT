@@ -15,3 +15,6 @@ Dataset that I used to train:
 
 Screenshot of my web interface:
 ![Alt Text](https://github.com/Noppawee-Teeraratchanon/NLP_A5_Sentence_BERT/blob/main/A5_webpage.png)
+
+The performance table:
+![Alt Text](https://github.com/Noppawee-Teeraratchanon/NLP_A5_Sentence_BERT/blob/main/result.png)
